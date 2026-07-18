@@ -27,7 +27,8 @@ def convertir():
             'preferredquality': '192',
         }],
         'outtmpl': f'{DOWNLOAD_FOLDER}/%(title)s.%(ext)s',
-        'quiet': True
+        'quiet': True,
+        'extractor_args': {'youtube': ['player_client=android']}
     }
 
     try:
